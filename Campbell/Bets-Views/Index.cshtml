@@ -1,0 +1,14 @@
+﻿
+@model IEnumerable<SportBet.Models.Bet>
+@{
+    ViewBag.Title = "Index";
+}
+
+<h2>Place Your Bets Now !</h2>
+
+<h3></h3>
+
+<ul> @foreach (var bet in Model){
+    <li>@bet.Title (@bet.Odds) <input type="text" /> </li> 
+    } 
+</ul>
